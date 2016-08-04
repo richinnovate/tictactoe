@@ -1,0 +1,69 @@
+table {
+display: flex;
+justify-content: center;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+
+}
+
+body {
+  background-image: url('image/darth2.png');
+  background-position: center;
+  color: white;
+
+
+}
+
+tr {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  font-size: 5em;
+  text-align: center;
+  padding-top: 5em,
+
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.instructions{
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 5em;
+}
+
+*.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(255, 0, 0);
+  transform: translateY(0%);
+  transition: transform 0.25s linear;
+  background-image: url('image/broken.png');
+  background-position: center;
+}
+
+.modal.hidden{
+transform: translateY(100%);
+}
